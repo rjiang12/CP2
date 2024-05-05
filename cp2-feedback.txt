@@ -1,0 +1,6 @@
+1. What have you learned and applied in CP 2 since CP 1?
+Javascript functions! And I guess (since I already had JS background) how to do it properly...
+2. To what extent would you like feedback in CP 2 (e.g. thorough, particular areas of HTML/CSS/JS/UI)?
+I'd like general feedback on correctness and style. Maybe how to format my JS functions better if applicable? 
+3. Anything else you would like the grader to know?
+Not really. 

@@ -1,0 +1,99 @@
+/*
+    Author: Roy Jiang
+    CS 132 Spring 2024
+    Date: May 4th, 2024 
+
+    This is the styles.css page for my card game/gambling utilities webpage. 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: "Oswald", "Helvetica", sans-serif;
+    background-image: url("assets/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+#sub-header, #select-side, #disp-side, header {
+    display: flex;
+}
+
+#sub-header {
+    justify-content: space-between;
+}
+
+header {
+    justify-content: space-around;
+}
+
+header > h1, header > p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+header, #select-side, #disp-side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#select-side, #disp-side {
+    border: white 2px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+#select-side {
+    width: 30%;
+    border-style: solid;
+}
+
+#disp-side {
+    width: 60%;
+    border-style: dashed;
+}
+
+#util {
+    width: 300px;
+}
+
+select, button {
+    border-radius: 6px;
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+
+select {
+    padding: 0.7em 6em 0.7em 1em;
+}
+
+button {
+    padding: 0.7em 1em 0.7em 1em;
+}
+
+select, #util, button {
+    cursor: pointer;
+}
+
+#results {
+    padding-top: 10px;
+}
+
+#results > ul {
+    list-style: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 300px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden, #select-side.hidden {
+    display: none;
+}

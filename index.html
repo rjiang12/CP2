@@ -1,0 +1,48 @@
+<!--
+    Author: Roy Jiang
+    CS 132 Spring 2024
+    Date: May 4th, 2024 
+
+    This is the index.html page for my card game/gambling utilities. It includes dice
+    roll, coin flip, and card draw. Users can select what they want to do and use it! 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game utils</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="utils.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Game utils!</h1>
+        <p>For all your card game/gambling utility needs.</p>
+        <button>Toggle selection menu</button>
+    </header>
+    <section id="sub-header">
+        <div id="select-side">
+            <label for="util-picker">Select a utility to use:</label>
+            <select name="utility" id="util-picker">
+                <option value="Dice">Dice roll</option>
+                <option value="Coin">Coin flip</option>
+                <option value="Card">Card draw</option>
+            </select>
+            <div id="results">
+                <ul>
+                    <li>Dice: 1</li>
+                </ul>
+            </div>
+        </div>
+        <div id="disp-side">
+            <img id="util" class="dice" src="assets/dice-1.svg" alt="Dice face 1">
+            <p>Click to use!</p>
+        </div>
+    </section>
+
+</body>
+</html>
